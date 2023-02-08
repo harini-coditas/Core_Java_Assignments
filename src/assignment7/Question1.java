@@ -15,10 +15,10 @@ class ArrayMethods{
        System.out.println();
        if(Arrays.equals(array1,array2)){
 
-           System.out.println("The arrays are equal");
+           System.out.println("The arrays are Equal");
        }
        else{
-           System.out.println("The arrays are not equal");
+           System.out.println("The arrays are Not Equal");
        }
 
 
