@@ -25,3 +25,11 @@ public class Question3 {
         test.display();
     }
 }
+
+/*
+Output:
+The temperature for given variable is:
+high
+
+Process finished with exit code 0
+ */

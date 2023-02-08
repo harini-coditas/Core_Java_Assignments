@@ -23,3 +23,12 @@ public class Question5 {
         test.greatest();
     }
 }
+
+/*
+Output:
+13
+3
+Greatest of number1 and number2 is : 13
+
+Process finished with exit code 0
+ */

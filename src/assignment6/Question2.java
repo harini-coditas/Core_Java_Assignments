@@ -22,3 +22,11 @@ public class Question2 {
 
     }
 }
+
+/*
+Output:
+The output of CodeSnippet2 is:
+third
+
+Process finished with exit code 0
+ */

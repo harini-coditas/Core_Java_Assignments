@@ -62,3 +62,28 @@ public class Question7 {
 
     }
 }
+
+/*
+Output:
+--Output of printData method--
+The days in a week are:
+Monday
+Tuesday
+Wednesday
+Friday
+Saturday
+Sunday
+--Output of skipToday method--
+Sunday
+Monday
+Tuesday
+Thursday
+Friday
+Saturday
+--Output of printDateTillToday method--
+1 2 3 4 5 6 7 8
+
+Process finished with exit code 0
+
+
+ */

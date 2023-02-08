@@ -23,3 +23,11 @@ public class Question4 {
         test.display();
     }
 }
+
+/*
+Output:
+X = 4
+
+Process finished with exit code 0
+
+ */

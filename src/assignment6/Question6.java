@@ -42,3 +42,14 @@ public class Question6 {
         test.showYoungAndOld();
     }
 }
+
+/*
+Output:
+56
+78
+13
+ The Youngest is Person 3: 13
+ The Oldest is Person 2: 78
+
+Process finished with exit code 0
+ */

@@ -51,3 +51,8 @@ public class Question8 {
         pattern3.print2A();
     }
 }
+
+/*
+Output:
+
+ */
