@@ -23,8 +23,9 @@ public class Question1 {
 
 }
 
-/* Output:
-   The output of CodeSnippet1 is:
+/*
+Output:
+The output of CodeSnippet1 is:
 second
 third
 

@@ -30,14 +30,18 @@ class Pattern1B{
 }
 class Pattern2A{
     public void print2A(){
-        for( int i=9 ; i >= 1 ; i--){
+        for( int i=9 ; i >= 1 ; i--) {
 
-            for(int j=1 ; j <= i ; j++) {
+            for(int k1=1 ; k1<=9-i ; k1++) {
+                System.out.print(" ");
+                k1++;
+            }
 
+            for (int j = 1 ; j <= i ; j++) {
                 System.out.print("*");
             }
-            i=i-1;
             System.out.println();
+            i = i - 1;
         }
     }
 }

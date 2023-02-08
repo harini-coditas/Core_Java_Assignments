@@ -1,5 +1,6 @@
 package assignment7;
 
+import java.util.*;
 import java.util.Arrays;
 class ArrayMethods{
     int array1[] = {1 ,489, 60, 19 , 130 ,5};
@@ -10,9 +11,16 @@ class ArrayMethods{
             System.out.print(element +" ");
         }
     }
-   public void arrayAsList(){
+   public void arrayEquals(){
        System.out.println();
-        System.out.println("The array as list is: "+Arrays.asList(array1));
+       if(Arrays.equals(array1,array2)){
+
+           System.out.println("The arrays are equal");
+       }
+       else{
+           System.out.println("The arrays are not equal");
+       }
+
 
     }
 }
@@ -21,7 +29,15 @@ public class Question1 {
         ArrayMethods method1 = new ArrayMethods();
         System.out.println("The sorted array is: ");
         method1.sortingArray();
-        method1.arrayAsList();
+        method1.arrayEquals();
 
     }
 }
+/*
+Output:
+The sorted array is:
+1 5 19 60 130 489
+The array are not equal
+
+Process finished with exit code 0The sorted array is:
+ */
