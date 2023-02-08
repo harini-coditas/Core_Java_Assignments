@@ -37,7 +37,7 @@ public class Question1 {
 Output:
 The sorted array is:
 1 5 19 60 130 489
-The array are not equal
+The arrays are not equal
 
 Process finished with exit code 0The sorted array is:
  */
