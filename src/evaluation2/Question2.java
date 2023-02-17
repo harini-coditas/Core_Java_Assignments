@@ -27,7 +27,7 @@ class WeekDays{
             case "SATURDAY":
                System.out.println("Its a Weekend!!!majjani life :");
                break;
-            case "Sunday":
+            case "SUNDAY":
                System.out.println("Last day of weekend :(");
                break;
                default:
@@ -36,10 +36,14 @@ class WeekDays{
         }
     }
     public void notToday(){
-        /*for(int index : days){
-            if(days[index]==dow){
+       /*for(index : days) {
+            if (days[index] != String.valueOf(dow)){//currentDate.getDayOfWeek())) {
+                System.out.println(days[index]);
 
-            }*/
+
+            }
+
+        }*/
 
 
     }
@@ -47,11 +51,9 @@ class WeekDays{
 }
 public class Question2 {
     public static void main(String[] args) {
-        WeekDays days = new WeekDays();
-
         LocalDate currentDate = LocalDate.now();
-
        DayOfWeek dow = currentDate.getDayOfWeek();
+        WeekDays days = new WeekDays();
         days.display(String.valueOf(dow));
     }
 }
