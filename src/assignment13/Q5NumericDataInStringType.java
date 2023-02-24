@@ -13,17 +13,17 @@ public class Q5NumericDataInStringType {
       //   case 2: i<11
         int array[] = {1,2,3,1,2,4,6,9,8,5};
         int sum = 0;
-        //try{
+       try{
             for(int i=0; i<11; i++){
                 sum = sum + array[i];
             }
-//        }
-//        catch(Exception e){
-//            System.out.println("The exception is: "+e);
-//        }
-//        finally {
-//            System.out.println("Please check the number of values entered");
-//        }
+        }
+        catch(Exception e){
+            System.out.println("The exception is: "+e);
+        }
+        finally {
+            System.out.println("Please check the number of values entered");
+        }
         System.out.println("The sum is: "+sum);
    }
 }
