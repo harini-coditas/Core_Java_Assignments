@@ -2,14 +2,7 @@ package evaluation4;
 
 import java.util.*;
 import java.util.StringTokenizer;
-//class Menu{
-//    Scanner sc = new Scanner(System.in);
-//    int num = sc.nextInt();
-//
-//
-//
-//    }
-//}
+
 class CountTokens{
 
     public void countTokens(){
