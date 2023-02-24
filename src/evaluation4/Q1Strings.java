@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 //}
 class CountTokens{
 
-
     public void countTokens(){
         int count = 0;
 
@@ -67,12 +66,27 @@ class CountVowels {
 
     public class Q1Strings {
         public static void main(String[] args) {
-            CountTokens testString1 = new CountTokens();
-            testString1.countTokens();
-            CountVowels testString2 = new CountVowels();
-            testString2.countVowels();
-            IfNotVowel testString3 = new IfNotVowel();
-            testString3.ifNotVowel();
+            Scanner sc = new Scanner(System.in);
+            for(int i=1;i<=3;i++) {
+            System.out.println("Enter your choice 1 for CountTokens,2 for CountVowels or 3 for IfNotVowel");
+            int num = sc.nextInt();
+
+                switch (num) {
+
+                    case 1:
+                        CountTokens testString1 = new CountTokens();
+                        testString1.countTokens();
+                        break;
+                    case 2:
+                        CountVowels testString2 = new CountVowels();
+                        testString2.countVowels();
+                        break;
+                    case 3:
+                        IfNotVowel testString3 = new IfNotVowel();
+                        testString3.ifNotVowel();
+                        break;
+                }
+            }
 
         }
     }
@@ -80,17 +94,24 @@ class CountVowels {
 /*
 Output--
 
+Enter your choice 1 for CountTokens,2 for CountVowels or 3 for IfNotVowel
+2
+----------
+Number of vowels is :6
+new string is :iiaaii
+Enter your choice 1 for CountTokens,2 for CountVowels or 3 for IfNotVowel
+3
+------------
+new string is :ii-!i!an!iasioi"
+Enter your choice 1 for CountTokens,2 for CountVowels or 3 for IfNotVowel
+1
 hi
 i
 am
 harini
 Count of tokens is :4
-----------
-Number of vowels is :6
-new string is :iiaaii
-------------
-new string is :ii-!i!an!iasioi"
 
 Process finished with exit code 0
+
 
  */
