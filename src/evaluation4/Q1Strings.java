@@ -55,7 +55,7 @@ class CountVowels {
                 char ch = string.charAt(i);
 
                 if (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u' && ch != 'A' && ch != 'E' && ch != 'I' && ch != 'O' && ch != 'U') {
-                    str = str + ch +1;
+                    str = str +(char)(ch +1);
                 } else {
                     str = str + ch;
                 }
@@ -77,3 +77,20 @@ class CountVowels {
         }
     }
 
+/*
+Output--
+
+hi
+i
+am
+harini
+Count of tokens is :4
+----------
+Number of vowels is :6
+new string is :iiaaii
+------------
+new string is :ii-!i!an!iasioi"
+
+Process finished with exit code 0
+
+ */
