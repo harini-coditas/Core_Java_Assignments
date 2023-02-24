@@ -22,3 +22,20 @@ public class CustomExceptionDepositWithdraw {
 
     }
 }
+
+/*
+Welcome
+Please enter '1' for DEPOSIT and enter '2' for WITHDRAWAL
+1
+Please enter DEPOSIT AMOUNT
+0
+The amount you have entered is : deposit is INVALID
+
+-----
+Welcome
+Please enter '1' for DEPOSIT and enter '2' for WITHDRAWAL
+2
+Please enter the withdrawal amount
+15000
+The amount entered is : is greater than balance
+ */
