@@ -119,3 +119,27 @@ public class InheritanceQuestions {
 
     }
 }
+
+/*
+This Employee method computes Salary
+salary of employee is: 12000
+This Employee method computes Salary
+salary of employee is: 12000
+WageEmployee{hrs=12, rate=1000}
+This Employee method computes Salary
+salary of employee is: 12000
+Salary of SalesPerson ::17000
+SalesPerson{sales=50, commission=100, hrs=12, rate=1000}
+This Employee method computes Salary
+salary of employee is: 0
+Manager name is: Ram
+Salary of Manager: 60000
+Manager{managerName='Ram', fixedSalary=50000, incentives=10000, hrs=0, rate=0}
+This Employee method computes Salary
+salary of employee is: 3000
+This Employee method computes Salary
+salary of employee is: 5400
+This Employee method computes Salary
+salary of employee is: 24000
+
+ */
