@@ -14,7 +14,7 @@ public class AmountExceptionChecker {
     }
     public void withdrawal(int withdrawalAmount){
         try{
-            if(withdrawalAmount <=0 ){
+            if(withdrawalAmount <= 0 ){
                 throw new InvalidAmountException(" withdrawal is INVALID");
             }
             try{
