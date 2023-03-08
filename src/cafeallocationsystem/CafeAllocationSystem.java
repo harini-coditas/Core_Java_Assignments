@@ -1,30 +1,32 @@
 package cafeallocationsystem;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.awt.print.Book;
 import java.util.Scanner;
 
 public class CafeAllocationSystem {
     public static void main(String[] args) {
-        BookTable bookTable = new BookTable();
 
-        PrintMenu printMenu = new PrintMenu();
-
-        PlaceOrder placeOrder = new PlaceOrder();
-
+        System.out.println("***   Welcome to our Cafe   ***");
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
         while(flag) {
-            System.out.println("-- Please Enter 0 to exit --" +
-                    "-- Enter 1 to Book Table --" +
-                    "-- Enter 2 to Print Menu --" +
-                    "-- Enter 3 to Place Order --");
+
+            BookTable bookTable = new BookTable();
+
+            PrintMenu printMenu = new PrintMenu();
+
+            PlaceOrder placeOrder = new PlaceOrder();
+            System.out.println("-----------------------------");
+            System.out.println("Please enter: ");
+            System.out.println(" '1' to Book Table");
+            System.out.println(" '2' to Print Menu");
+            System.out.println(" '3' to Place Order");
+            System.out.println(" '0' to Exit");
+            System.out.println("-----------------------------");
             int choice = sc.nextInt();
             switch (choice) {
-                case 0:
-                    flag = false;
-                    System.out.println("--- Exit ---");
-                    System.exit(0);
-                    break;
                 case 1:
                     System.out.println("--- Book Table ---");
                     //bookTable.hasReservation(hasTable);
@@ -35,8 +37,21 @@ public class CafeAllocationSystem {
                     printMenu.displayMenu();
                     break;
                 case 3:
-                    System.out.println("--- Order Please ---");
-                    placeOrder.inputDetails();
+                    if(BookTable.hasTable == false){
+                        try{
+                            throw new NoReservationFound();
+                        } catch (NoReservationFound e) {
+                        }
+                    }
+                    else {
+                        System.out.println("--- Order Please ---");
+                        placeOrder.inputDetails();
+                    }
+                    break;
+                case 0:
+                    flag = false;
+                    System.out.println("--- Exit ---");
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("--- Invalid choice entered. Please select from the above menu ---");

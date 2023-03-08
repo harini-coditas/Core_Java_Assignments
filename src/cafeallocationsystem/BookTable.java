@@ -5,7 +5,7 @@ public class BookTable extends Thread{
     static int tableOf4 = 4;
     static int tableOf6 = 2;
     static int tableOf8 = 2;
-    static boolean hasTable = true;
+    static boolean hasTable = false;
     Scanner sc = new Scanner(System.in);
     //public void run() {
 //        public void enterDetails() {
@@ -24,15 +24,19 @@ public class BookTable extends Thread{
                 if (tableOf2 != 0) {
                     System.out.println("Yay! Table of 2 is booked for you!");
                     tableOf2--;
+                    hasTable = true;
                 } else if (tableOf4 != 0) {
                     System.out.println("Yay! Table of 4 is booked for you!");
                     tableOf4--;
+                    hasTable = true;
                 } else if (tableOf6 != 0) {
                     System.out.println("Yay! Table of 6 is booked for you!");
                     tableOf6--;
+                    hasTable = true;
                 } else if (tableOf8 != 0) {
                     System.out.println("Yay! Table of 8 is booked for you!");
                     tableOf8--;
+                    hasTable = true;
                 } else {
                     hasTable = false;
                     System.out.println("Sorry! no tables are empty");
@@ -41,12 +45,15 @@ public class BookTable extends Thread{
                 if (tableOf4 != 0) {
                     System.out.println("Yay! Table of 4 is booked for you!");
                     tableOf4--;
+                    hasTable = true;
                 } else if (tableOf6 != 0) {
                     System.out.println("Yay! Table of 6 is booked for you!");
                     tableOf6--;
+                    hasTable = true;
                 } else if (tableOf8 != 0) {
                     System.out.println("Yay! Table of 8 is booked for you!");
                     tableOf8--;
+                    hasTable = true;
                 } else {
                     hasTable = false;
                     System.out.println("Sorry! no tables are empty");
@@ -55,9 +62,11 @@ public class BookTable extends Thread{
                 if (tableOf6 != 0) {
                     System.out.println("Yay! Table of 6 is booked for you!");
                     tableOf6--;
+                    hasTable = true;
                 } else if (tableOf8 != 0) {
                     System.out.println("Yay! Table of 8 is booked for you!");
                     tableOf8--;
+                    hasTable = true;
                 } else {
                     hasTable = false;
                     System.out.println("Sorry! no tables are empty");
@@ -66,6 +75,7 @@ public class BookTable extends Thread{
                 if (tableOf8 != 0) {
                     System.out.println("Yay! Table of 8 is booked for you!");
                     tableOf8--;
+                    hasTable = true;
                 } else {
                     hasTable = false;
                     System.out.println("Sorry! no tables are empty");
@@ -76,12 +86,12 @@ public class BookTable extends Thread{
                 System.out.println("Sorry! No Seats Available");
             }
         }
-        public boolean hasReservation(boolean hasTable){
+       /* public boolean hasReservation(boolean hasTable){
             if(hasTable==true)
                 return true;
             else
                 return false;
-        }
+        }*/
     //}
 //    public static void main(String[] args) {
 //        BookTable bookTable = new BookTable();

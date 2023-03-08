@@ -5,18 +5,8 @@ public class PlaceOrder extends PrintMenu{
 //    public void displayMenu() {
 //        super.displayMenu();
 //    }
- boolean allowed;
-    @Override
-    public boolean hasReservation(boolean hasTable) {
-        super.hasReservation(hasTable);
-        //allowed = this.hasTable;
-
-        return hasTable;
-    }
 
     public void inputDetails() {
-        try {
-            if (hasTable == true) {
                 System.out.println("Please enter your Table number");
                 int tableNo = sc.nextInt();
                 System.out.println("Please enter your choice as 'yes' to order and 'no' to exit");
@@ -35,12 +25,6 @@ public class PlaceOrder extends PrintMenu{
                         System.out.println("Please enter the valid choice");
                         break;
                 }
-            } else {
-                throw new NoReservationFound();
-            }
-        } catch (NoReservationFound e) {
-           // System.exit(0);
-        }
     }
             public void yourOrder(){
                 int totalBill = 0;
@@ -66,8 +50,11 @@ public class PlaceOrder extends PrintMenu{
                     int quantity = sc.nextInt();
                     quantityOrdered[i] = quantity;
                 }
+                System.out.println("---------------------------------------------------------------");
+                System.out.println("  Items Ordered  "+" | "+"  Quantity of each Item  " +" | "+"  Subtotal  " );
+                System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
                 for (int i = 0; i < quantityOrdered.length; i++) {
-                    System.out.println("itemOrdered: " + menu[ordered[i]] + " | " + "  quantityOrdered: " + quantityOrdered[i] + "   |   " + "totalCost: " + price[ordered[i]] * quantityOrdered[i]);
+                    System.out.println(menu[ordered[i]] + "    |    " +"           " + quantityOrdered[i]+"        " + "   |   " + price[ordered[i]] * quantityOrdered[i]);
                     totalBill += price[ordered[i]] * quantityOrdered[i];
 
                 }
@@ -79,16 +66,20 @@ public class PlaceOrder extends PrintMenu{
                     try {
                         throw new InValidOrderException();
                     } catch (InValidOrderException e) {
-                        System.exit(0);
+
                     }
 
                 }
-                //if(count==0) {
+
+                if(hasCoffee){
                 int orderNumber = random.nextInt(1000);
+                System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+                System.out.println("  Grandtotal     "+" | "+"                       "+"   |   " +totalBill);
+                System.out.println("---------------------------------------------------------------");
                 System.out.println("---   Order number of your order is: " + orderNumber + "   --- ");
                 System.out.println("----- Total bill to be paid for this order number-" + orderNumber + " is: " + totalBill + " ----- ");
-                // }
             }
+    }
 //          public static void main(String[] args) {
 //          PlaceOrder placeOrder = new PlaceOrder();
 //              System.out.println(placeOrder.hasReservation(hasTable));

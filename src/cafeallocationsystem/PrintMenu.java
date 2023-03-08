@@ -7,18 +7,8 @@ public class PrintMenu extends BookTable {
     String menu[] = {"Coffee        ", "French fries  ", "Veg Burger    ", "Chicken Burger", "Pizza         ", "Ice cream     "};
     int price[] = {80, 180, 150, 220, 190, 160};
     int serialNo[] = {0, 1, 2, 3, 4, 5};
-    //boolean allowedForOrder = super.hasTable;
-
-    @Override
-    public boolean hasReservation(boolean hasTable) {
-        hasTable = super.hasTable;
-        return hasTable;
-
-    }
 
     public void displayMenu() {
-        // if(allowedForOrder==true){
-//        public void displayMenu() {
         System.out.println("----------------------------------------------------");
         System.out.println("## S.No |  Food Item Name  |  Price Of OrderedItem ##");
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - -");
@@ -29,16 +19,6 @@ public class PrintMenu extends BookTable {
         System.out.println("Please Order Something!");
     }
 }
-        //}
-//      else {
-//          try {
-//              throw new NoReservationFound();
-//          } catch (NoReservationFound e) {
-//              System.exit(0);
-//          }
-//      }
-//    }
-//}
 //    public void takeOrder(){
 //        System.out.println("Do you want to order anything:)");
 //        String response = sc.nextLine();
