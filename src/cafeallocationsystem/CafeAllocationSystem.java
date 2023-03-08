@@ -1,8 +1,6 @@
 package cafeallocationsystem;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
-import java.awt.print.Book;
 import java.util.Scanner;
 
 public class CafeAllocationSystem {
