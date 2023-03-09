@@ -9,6 +9,7 @@ public class User {
     Random random = new Random();
   //  long mobileNo = random.nextLong() % 10000000000L;
   HashSet<Integer> mobNoSet = new HashSet<>();
+  int mobileNo;
     public int validity;
     public int amount;
     public int iniBal;
@@ -29,7 +30,7 @@ public class User {
         iniBal = sc.nextInt();
         validity = 30;
 
-        int mobileNo = random.nextInt(900000000) + 1000000000;
+        mobileNo = random.nextInt(900000000) + 1000000000;
         System.out.println("Your mobile no is: "+mobileNo);
 
 

@@ -2,10 +2,12 @@ package evaluation5;
 
 import java.util.Scanner;
 
-public class SIMCompanyCallCenter {
+public class SIMCompanyCallCenter extends User{
 
+    int mobileNo = this.mobileNo;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         boolean flag = true;
         while(flag){
 
@@ -22,10 +24,17 @@ public class SIMCompanyCallCenter {
             int choice = sc.nextInt();
             switch (choice){
                 case 1:
+//                  if(mobNoSet.contains(mobileNo)) {
+                      System.out.println(" Prepaid User ---");
 
-                    System.out.println(" Prepaid User ---");
-
-                    prepaid.prepaidMenu();
+                      prepaid.prepaidMenu();
+//                  }else{
+//                      try{
+//                          throw new UserDoesNotExistException();
+//                      }catch(UserDoesNotExistException e){
+//
+//                      }
+//                  }
                     break;
                 case 2:
                     System.out.println(" New connection ---");
