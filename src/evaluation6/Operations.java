@@ -332,7 +332,7 @@ public class Operations{
     public void query3() {
         try{
             Connection connection = ConnectClass.create();
-            String q = "select * from student1 s join teacher1 t on s.tid=t.tid where tcity in ('pune','mumbai') and tname like '%a' ;";
+            String q = "select * from student1 s join teacher1 t on s.tid=t.tid where tcity in ('pune','mumbai') and tname like '%a';";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(q);
             while(resultSet.next()){
