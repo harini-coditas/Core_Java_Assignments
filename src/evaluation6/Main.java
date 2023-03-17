@@ -12,18 +12,17 @@ public class Main {
         /*
         1 Teacher many students
          */
-        System.out.println("-- JDBC Student and Teacher --");
-        System.out.println("-------------------------------------------------");
-        System.out.println("enter 1 for RETRIEVE");
-        System.out.println("enter 2 for UPDATE");
-        System.out.println("enter 3 for DELETE");
-        System.out.println("enter 4 for INSERT");
-        System.out.println("enter 5 for student name 'Z'");
-        System.out.println("enter 6 for teacher Exp >=5 ");
-        System.out.println("enter 7 for teachercity = pune/mumbai & name ends with 'A'");
-        System.out.println("enter 0 for exit");
-        System.out.println("-------------------------------------------------");
         while(true) {
+            System.out.println("-------------------------------------------------");
+            System.out.println("enter 1 for RETRIEVE");
+            System.out.println("enter 2 for UPDATE");
+            System.out.println("enter 3 for DELETE");
+            System.out.println("enter 4 for INSERT");
+            System.out.println("enter 5 for student name 'Z'");
+            System.out.println("enter 6 for teacher Exp >=5 ");
+            System.out.println("enter 7 for teachercity = pune/mumbai & name ends with 'A'");
+            System.out.println("enter 0 for exit");
+            System.out.println("-------------------------------------------------");
             System.out.println("Enter choice");
             int choice = Integer.parseInt(br.readLine());
 
@@ -39,19 +38,24 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("--  DELETE");
+                    operations.delete();
                     break;
                 case 4:
                     System.out.println("-- INSERT");
-                    boolean b = Operations.insert();
+                   //operations.insert();
+                    boolean b = operations.insert();
                     break;
                 case 5:
-                    System.out.println("-- student name 'Z'");
+                    System.out.println("-- student name 'z'");
+                    operations.query1();
                     break;
                 case 6:
                     System.out.println("-- teacher Exp >=5");
+                    operations.query2();
                     break;
                 case 7:
                     System.out.println("-- teachercity = pune/mumbai & name ends with 'A'");
+                    operations.query3();
                     break;
                 case 0:
                     System.out.println("-- EXIT");
