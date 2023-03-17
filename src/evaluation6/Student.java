@@ -6,20 +6,23 @@ public class Student {
    String scity;
     String ssubject;
     int smarks;
+    int tid;
 
-    public Student(int sid, String sname, String scity, String ssubject, int smarks) {
+    public Student(int sid, String sname, String scity, String ssubject, int smarks,int tid) {
         this.sid = sid;
         this.sname = sname;
         this.scity = scity;
         this.ssubject = ssubject;
         this.smarks = smarks;
+        this.tid = tid;
     }
 
-    public Student(String sname, String scity, String ssubject, int smarks) {
+    public Student(String sname, String scity, String ssubject, int smarks,int tid) {
         this.sname = sname;
         this.scity = scity;
         this.ssubject = ssubject;
         this.smarks = smarks;
+        this.tid = tid;
     }
 
     public Student() {
@@ -33,7 +36,8 @@ public class Student {
                 ", sname='" + sname + '\'' +
                 ", scity='" + scity + '\'' +
                 ", ssubject='" + ssubject + '\'' +
-                ", smarks=" + smarks +
+                ", smarks=" + smarks + '\'' +
+                ", tid=" + tid +
                 '}';
     }
 }

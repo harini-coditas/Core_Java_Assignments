@@ -9,6 +9,7 @@ import java.sql.*;
 
 public class Operations{
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    Student student = new Student();
 
     //@Override
     public void retrieve() throws IOException {
@@ -288,6 +289,7 @@ public class Operations{
                 String city = resultSet.getString(4);
                 int marks = resultSet.getInt(5);
                 int tid = resultSet.getInt(6);
+                //System.out.println(student.toString(id,name,sub,city,marks,tid));
                 System.out.println("Id: " + id);
                 System.out.println("Name: " + name);
                 System.out.println("sub: " + sub);
